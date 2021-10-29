@@ -1,14 +1,19 @@
 <template>
-  <UserTable />
+  <div class="container">
+    <AddUserForm />
+    <UserTable />
+  </div>
 </template>
 
 <script>
 import UserTable from "./components/UserTable.vue";
+import AddUserForm from "./components/AddUserForm.vue";
 
 export default {
   name: "App",
   components: {
     UserTable,
+    AddUserForm,
   },
 };
 </script>
